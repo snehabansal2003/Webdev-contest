@@ -8,6 +8,8 @@ Judging Criteria for the contest:
 4. Involvement of Latest Tech Stack
 5. Objectivity
 
+
+
 The following rules are to be followed for the contest:
 
 1) A presentation round will be held before the participants start developing their website. 
