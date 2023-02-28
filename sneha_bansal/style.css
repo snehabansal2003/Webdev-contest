@@ -1,0 +1,87 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@500&family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image: url("https://images.pexels.com/photos/533769/pexels-photo-533769.jpeg?cs=srgb&dl=pexels-pixabay-533769.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+header{
+    overflow: hidden;
+}
+header{
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    color: rgb(207, 197, 183);
+}
+header h1 {
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Anton', sans-serif;
+}
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: flex-start;
+    gap: 1rem;
+    padding-left: 30px;   
+}
+.card{
+background-color: rgb(195, 224, 235);
+width: 320px;
+height: 490px;
+margin-top: 20px;
+border-radius: 10px;
+overflow: hidden;
+}
+img{
+width: 300px;
+height: 200px;
+padding-left: 10px;
+padding-top: 10px;
+
+}
+h2{
+    color: rgba(107, 144, 153, 0.678);
+    text-align: center;
+}
+p{
+    padding: 10px;
+    background-color: rgba(192, 196, 196, 0);
+    text-align: justify;
+}
+a{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: inherit;
+    text-decoration: none;
+    transition: color 1s , box-shadow .3s;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    animation: blinking 2s infinite;
+}
+@keyframes blinking{
+    0%{ color: rgba(107, 144, 153, 0.678);}
+    47%{ color: #2d7d9a;}
+    62%{ color: #1d627b;}
+    97%{ color: #134e63;}
+    100%{ color: #033040;}
+}
+.card:hover{
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+    box-shadow: inset 200px 0 0 0 #54b3d6;
+    color: rgb(255, 255, 255);
+}
