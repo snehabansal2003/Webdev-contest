@@ -86,12 +86,20 @@ button:hover{
         <h1>
             Book Your Trip
         </h1>
-        <p>Name: <input type="text" name="name" id="name" required></p>
-        <p>Email: <input type="email" name="email" id="email" required></p>
+        <p>Name: <input type="text" name="name" id="name" placeholder="Enter your Name" required></p>
+        <p>Email: <input type="email" name="email" id="email" placeholder="Enter your Email" required></p>
         <fieldset>
-            <legend>Aadhar Card Details</legend>
-            <p>Aadhar No. : <input type="number" name="aadhar" id="aadhar" required></p>
-            <p>Aadhar Photo: <input type="file" name="file" id="file" required></p>
+            <legend>Identification Details</legend>
+            <p>Identification type: <select name="identify" id="identify" required>
+                <option value="">--Select ID type--</option>
+                <option value="pan_card">Pan Card</option>
+                <option value="aadhar">Aadhar Card</option>
+                <option value="dl">Driving License</option>
+                <option value="passport">Passport</option>
+                <option value="voter">Voter ID Card</option>
+            </select></p>
+            <p>ID No. : <input type="text" name="aadhar" id="aadhar" placeholder="Enter the Number" required></p>
+            <p>ID Photo: <input type="file" name="file" id="file" required></p>
         </fieldset>
         <fieldset class="details">
             <legend>Trip Details</legend>
@@ -112,7 +120,7 @@ button:hover{
         </select></p>
         <p>From Date: <input type="date" name="from_date" id="from_date" required></p>
         <p>Till Date: <input type="date" name="till_date" id="till_date" required></p>
-        <p>Number of Person: <input type="number" name="number" id="number" required></p>
+        <p>Number of Person: <input type="number" name="number" id="number" placeholder="Enter the Person Number" required></p>
     </fieldset>
     <button type="submit">Submit</button>
     </form>
