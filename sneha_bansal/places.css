@@ -105,6 +105,7 @@ nav a:hover{
 .logo{
     float: left;
     transition: none;
+    font-family: "Permanent Marker", cursive;
   }
   .logo:hover{
     box-shadow: none;
