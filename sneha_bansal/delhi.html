@@ -84,6 +84,13 @@ nav a:hover{
     box-shadow: inset 200px 0 0 0 #54b3d6;
     cursor: pointer;
 }
+.logo{
+  float: left;
+  transition: none;
+}
+.logo:hover{
+  box-shadow: none;
+}
 @media only screen and (max-width: 900px){
     .item-1{
             display: flex;
@@ -132,16 +139,18 @@ nav a:hover{
 <body>
     <header>
         <nav>
-            <a href="index.html#contact">Contact Us</a>
+            <a class="logo">LOGO.</a>
+            <a href="places.html#contact">Contact Us</a>
             <a href="booking.html">Booking</a>
             <a href="tour.html">Packages</a>
             <a href="login.html">Login</a>
             <a href="register.html">Create Account</a>
+            <a href="places.html">Places</a>
             <a href="index.html">Home</a>
         </nav>
     </header>
     <div class="map">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1gVAv8PAXi_d84Wy_qRIHe-DPY6XVc0g&hl=en&ehbc=2E312F" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=11bkGyrizJdazvQ7F0dJIvR55vj0bAe4&ehbc=2E312F" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="item">
         <h1>Best Places To Visit</h1>

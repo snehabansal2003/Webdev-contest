@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Dancing+Script:wght@700&family=Mynerve&family=Noto+Sans+JP:wght@500&display=swap');
 
 body{
-    background-image: url("https://images.pexels.com/photos/533769/pexels-photo-533769.jpeg?cs=srgb&dl=pexels-pixabay-533769.jpg&fm=jpg");
+    background-image: url("https://cityfurnish.com/blog/wp-content/uploads/2023/08/beach-near-hotel-min-1200x800.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -24,65 +24,6 @@ header h1 {
     -webkit-background-clip: text;
     font-family: 'Anton', sans-serif;
 }
-.grid{
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    align-items: flex-start;
-    gap: 1rem;
-    padding-left: 30px;   
-}
-.card{
-background-color: rgb(195, 224, 235);
-width: 320px;
-height: 500px;
-margin-top: 20px;
-border-radius: 10px;
-overflow: hidden;
-}
-img{
-width: 300px;
-height: 200px;
-padding-left: 10px;
-padding-top: 10px;
-
-}
-h2{
-    color: rgba(107, 144, 153, 0.678);
-    text-align: center;
-}
-p{
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: rgba(192, 196, 196, 0);
-    text-align: justify;
-}
-h2 a{
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    color: inherit;
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-    animation: blinking 2s infinite;
-}
-@keyframes blinking{
-    0%{ color: rgba(107, 144, 153, 0.678);}
-    47%{ color: #2d7d9a;}
-    62%{ color: #1d627b;}
-    97%{ color: #134e63;}
-    100%{ color: #033040;}
-}
-.card:hover{
-    -webkit-transform: scale(1.07);
-    -ms-transform: scale(1.07);
-    transform: scale(1.07);
-    text-decoration: none;
-}
-h2 a:hover{
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-}
 nav{
     background-color: #817e84;
     overflow: hidden;
@@ -98,73 +39,67 @@ nav a{
     gap: 20px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+.logo{
+  float: left;
+  transition: none;
+}
+.logo:hover{
+  box-shadow: none;
+}
 nav a:hover{
     box-shadow: inset 200px 0 0 0 #54b3d6;
     cursor: pointer;
 }
-.read{
-    float: right;
-    padding-right: 10px;
-    cursor: pointer;
-
-}
-main{
-    padding-bottom: 100px;
-}
-footer{
-    background-color: #817e84;
-    padding-top: 10px;
+section {
+    margin: 2rem 8.5rem;
+  }
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+  }
+  
+  .main h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #686a80;
+  }
+  footer{
+    margin: 0rem 10rem;
+    overflow: hidden;
+  }
+  .services{
+    margin: 2rem 8.5rem;
+    background-color: #fff;
+    height: 100px;
+    width: 60%;
+    position: fixed;
+    bottom: 0px;
+  }
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+  }
+  
+  .social a {
+    color: #00E8F8;
+    font-size: 1rem;
+    border: 1.6px solid #00E8F8;
+    border-radius: 50%;
+    padding: .35rem;
     text-align: center;
-}
-.contact-1{
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    font-size: 25px;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-.contact-2{
-    color: rgb(192, 189, 189);
-    font-size: 20px;
-}
-.contact-3{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #a6ccd9;
-    font-size: 75px;
-    font-weight: 900;
-}
-.contact-4{
-    color: white;
-    font-size: 30px;
-}
-.icon{
-    width: 30px;
-    height: 30px;
-}
-@media only screen and (min-width: 500px) and (max-width: 900px){
-    .grid{
-        padding-left: 50px;
-    }
-    nav a{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        float: left;
-    }
-    header{
-        height: 30%;
-    }
-}
-@media only screen and (max-width: 500px){
-    .grid{
-        padding-left: 10px;
-    }
-    nav a{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        float: left;
-    }
-    header{
-        height: 30%;
-    }
-}
+    width: 26px;
+  }
+  
+  .social a:hover {
+    color: #1F252E;
+    background-color: #00E8F8;
+    box-shadow: 0 0 20px #00E8F8;
+    transition: all .3s ease-in-out;
+  }
