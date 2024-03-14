@@ -11,11 +11,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Dancing+Script:wght@700&family=Mynerve&family=Noto+Sans+JP:wght@500&family=Satisfy&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+<style>
+       .nav-icon{
+    display: none;
+   }
+   @media  screen and (max-width:600px) {
+    .topnav a:not(:first-child){display:none;}
+    .topnav a.nav-icon{
+      float:right!important;
+      display: block;
+    }
+   }
+   @media screen and (max-width:600px){
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive a.nav-icon{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+   }
+</style>
 <body>
     <header>
-        <nav>
+        <nav class="topnav" id="topnav">
             <a class="logo"><b>VOYAGERS <i class="bi bi-geo-alt icon1"></i></b></a>
             <a href="places.html#contact">Contact Us</a>
             <a href="booking.html">Booking</a>
@@ -23,6 +51,7 @@
             <a href="login-register.html">Login/sign-in</a>
             <a href="places.html">Places</a>
             <a href="index.html">Home</a>
+            <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </nav>
     </header>
     <section id="home">
@@ -68,5 +97,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

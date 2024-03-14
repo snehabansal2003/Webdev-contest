@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Dancing+Script:wght@700&family=Mynerve&family=Noto+Sans+JP:wght@500&display=swap');
 
 body{
-    background-image: url("https://cityfurnish.com/blog/wp-content/uploads/2023/08/beach-near-hotel-min-1200x800.jpg");
+    background-image: url("image/home.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -27,6 +27,7 @@ header h1 {
 nav{
     background-color: #817e84;
     overflow: hidden;
+    display: block;
 }
 nav a{
     box-shadow: inset 0 0 0 0 #54b3d6;
